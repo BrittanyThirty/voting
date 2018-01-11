@@ -1,12 +1,12 @@
 $(document).ready(function(){
-  var age = parseInt(prompt("Enter your age!"));
+  var age = parseInt(prompt("Enter your age to see if you can legally vote!"));
 
-  if(age>21){
-    $('#over21').show();
-  }else if(age===21){
+  if(age>18){
+    $('#over18').show();
+  }else if(age===18){
     alert("Phew, you just made it!")
-    $('#over21').show();
+    $('#over18').show();
   }else{
-    $('#under21').show();
+    $('#under18').show();
   }
 });
